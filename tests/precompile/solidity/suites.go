@@ -64,14 +64,11 @@ var _ = ginkgo.Describe("[Precompiles]", ginkgo.Ordered, func() {
 	// TODO: can we refactor this so that it automagically checks to ensure each hardhat test file matches the name of a hardhat genesis file
 	// and then runs the hardhat tests for each one without forcing precompile developers to modify this file.
 	// ADD YOUR PRECOMPILE HERE
-	/*
-		ginkgo.It("your precompile", ginkgo.Label("Precompile"), ginkgo.Label("YourPrecompile"), func() {
-			ctx, cancel := context.WithTimeout(context.Background(), time.Minute)
-			defer cancel()
+	ginkgo.It("hello world", ginkgo.Label("Precompile"), ginkgo.Label("HelloWorld"), func() {
+		ctx, cancel := context.WithTimeout(context.Background(), time.Minute)
+		defer cancel()
 
-			// Specify the name shared by the genesis file in ./tests/precompile/genesis/{your_precompile}.json
-			// and the test file in ./contract-examples/tests/{your_precompile}.ts
-			utils.ExecuteHardHatTestOnNewBlockchain(ctx, "your_precompile")
-		})
-	*/
+		utils.ExecuteHardHatTestOnNewBlockchain(ctx, "hello_world")
+	})
+
 })
