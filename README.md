@@ -1,10 +1,6 @@
 # Subnet EVM - Precompiles Hands On
 
 ```shell
-Refer here : https://docs.avax.network/subnets/hello-world-precompile-tutorial
-```
-
-```shell
 Notes:
   -> Must run yarn in contracts dir for the hardhat to work,
      or else build fails in 'Running E2E Tests' section.
